@@ -76,6 +76,10 @@ class Jet::Client
   def refunds
     Refunds.new(self)
   end
+
+  def settlements
+    Settlements.new(self)
+  end
 end
 
 require 'jet/client/orders'
@@ -84,3 +88,4 @@ require 'jet/client/products'
 require 'jet/client/taxonomy'
 require 'jet/client/files'
 require 'jet/client/refunds'
+require 'jet/client/settlements'
